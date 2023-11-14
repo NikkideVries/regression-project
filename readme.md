@@ -87,7 +87,7 @@ Your customer/end user is the Zillow Data Science Team. In your deliverables, be
 |6111|Ventura|California|
 
 Graph showing where the majority of houses are compared to each county
-![Alt text](image-4.png)
+![Alt text](image.png)
 
 
 
