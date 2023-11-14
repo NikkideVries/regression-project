@@ -79,7 +79,7 @@ Your customer/end user is the Zillow Data Science Team. In your deliverables, be
     - Generalized Linear Model
 5. Create Report
 
-# Data For Maggie: Where is each county located: 
+# Where is each county located: 
 |**Fips**|**County**|**State**|
 |---|---|---|
 |6037|Los Angeles|California|
@@ -87,7 +87,7 @@ Your customer/end user is the Zillow Data Science Team. In your deliverables, be
 |6111|Ventura|California|
 
 Graph showing where the majority of houses are compared to each county
-![Alt text](image.png)
+![Alt text](image-1.png)
 
 
 ## Initial Questions Before looking into the data:
@@ -113,11 +113,11 @@ Features that were looked into but don't look reliable(outliers)
 #### Univarite Summary: 
 - The largest count of bathrooms 5.5. Data looks normally distributed.
 - The largest count of bedrooms is 6. Data looks normally distributed.
-- SQFT has a postive skew. The highest amount of SQFT is 4984!
-- Year built: There are some old, OLD, houses! Who gets an **1880's** house?
+- SQFT has a postive skew. The highest amount of SQFT is 5303!
+- Year built: There are some old, OLD, houses! Who gets an **1878's** house?
 - House age: Again, old houses. Youngest is 1 year old. The data has a negative skew.
-- Bedroom+Bathroom count: The higest amount of rooms was 10.
-- Target Varible: has a psotive skew. Higest value: **$1,522,235**. That is alot of money! 
+- Bedroom+Bathroom count: The higest amount of rooms was 11.5.
+- Target Varible: has a psotive skew. Higest value: **$1,829,696**. That is alot of money! 
 #### Bi/Multivariate Summary:
 - Based on the Heatmap: The top 3 features with the strongest correlation:
     - Sqft -> increase tax value

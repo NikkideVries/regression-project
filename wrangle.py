@@ -33,8 +33,7 @@ def new_zillow_data():
     '''
 
     zillow_query = '''
-    SELECT 
-        id,
+    SELECT
         transactiondate,
         bathroomcnt,
         bedroomcnt,
@@ -44,13 +43,10 @@ def new_zillow_data():
         propertylandusetypeid,
         propertylandusedesc,
         yearbuilt
-    FROM 
-        predictions_2017
-    LEFT JOIN properties_2017
-        USING (id)
-    LEFT JOIN propertylandusetype
-        USING (propertylandusetypeid)
-    WHERE propertylandusetypeid = 261
+    FROM properties_2017
+        JOIN predictions_2017 USING(parcelid)
+        JOIN propertylandusetype USING(propertylandusetypeid)
+    WHERE propertylandusedesc='Single Family Residential' AND transactiondate LIKE '2017%%'
         '''
         
     # read in the dataframe from codeup
@@ -96,7 +92,7 @@ def clean_zillow(df):
     # drop nulls
     df = df.dropna()
     
-    col_list = ['id','transactiondate','propertylandusetypeid','propertylandusedesc','fips']
+    col_list = ['transactiondate','propertylandusetypeid','propertylandusedesc','fips']
     
     #drop column names in col_list
     df = df.drop(columns = col_list)
@@ -190,6 +186,10 @@ def outlier(df, feature, m):
 
 # prep zillow: 
 def prep_zillow():
+    '''
+    This funciton will complete all the function listed above to make a clean perpared dataset.
+    get zillow, clean zillow, create columns, remove outliers, split data
+    '''
     
     # get the data frame:
     df = get_zillow_data()
