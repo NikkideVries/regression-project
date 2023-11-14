@@ -6,5 +6,6 @@ __pycache__
 *.xlsx
 *.csv
 testing.py
-*.png
+
+
 
