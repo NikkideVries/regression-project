@@ -29,7 +29,7 @@ Your customer/end user is the Zillow Data Science Team. In your deliverables, be
 2. Live presentation:
     - 5 minutes max
     
-## How to use this repository: 
+# How to use this repository: 
 1. You can download the repository to your local device and run the all the files to understand the process.
     - I have created the notebook in a way where each step of the planning is laid out in a notebook to help with understanding:
         - Data Acquisition
@@ -42,7 +42,7 @@ Your customer/end user is the Zillow Data Science Team. In your deliverables, be
     - You will need access to the code-up sql data library with your own credentials.
     
     
-### Data Dictoionary
+# Data Dictoionary
 |**Feature**|**Definition**|
 |---|---|
 |`transactiondate`| The date of the transaction. Year-Month-Day|
@@ -57,7 +57,7 @@ Your customer/end user is the Zillow Data Science Team. In your deliverables, be
 |`house_age`| How olf the property is. |
 |`bb_roomcnt`| The number of bedrooms plus the number of bathrooms|
 
-## Project Planning: 
+# Project Planning: 
 1. Data Acquisition:
     - Aquire the zillow dataset
 2. Data Peperation:
@@ -97,7 +97,7 @@ Graph showing where the majority of houses are compared to each county
 3. Where are most houses located?
 4. Between bedrooms and bathrooms, which has a higher drive for tax value?
 
-### Initial questions after looking into the data: 
+## Initial questions after looking into the data: 
 Could these features be factors? 
 - `yearbuilt` : How old the house is?
 - `lotsizesqaurefeet` : How big is the property?
